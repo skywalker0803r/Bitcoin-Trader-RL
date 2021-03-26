@@ -14,7 +14,7 @@ slice_point = int(len(df) - 50000)
 
 test_df = df[slice_point:]
 
-total_timesteps = 2000
+total_timesteps = 20000
 
 model = A2C.load("./model/model{}".format(total_timesteps))
 
