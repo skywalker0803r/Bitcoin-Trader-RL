@@ -20,7 +20,7 @@ train_env = DummyVecEnv(
 
 model = A2C(MlpPolicy, train_env, verbose=1,
             tensorboard_log="./tensorboard/")
-total_timesteps = 20000
+total_timesteps = 2000
 model.learn(total_timesteps=total_timesteps)
 
 model.save("./model/model{}".format(total_timesteps))
